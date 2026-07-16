@@ -107,6 +107,112 @@ td {
     padding: 10px;
 }
 
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+input,
+textarea {
+    padding: 10px;
+    border: 2px solid #999;
+    transition: border-color 0.3s ease;
+}
+
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #264653;
+}
+
+
+input[type="submit"] {
+    background-color: #264653;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #2a9d8f;
+}
+
+
+@media screen and (min-width: 320px) {
+    main {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 th {
     background-color: #4CAF50;
     color: white;
