@@ -73,3 +73,41 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+
+
+nav a {
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: lightblue;
+}
+
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
